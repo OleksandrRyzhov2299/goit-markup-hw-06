@@ -55,6 +55,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-btn" type="button">
+          <svg class="icon burger-menu" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- #endregion header -->
@@ -64,7 +69,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Effective Solutions for Your Business</h1>
-          <button class="hero__btn" type="button">Order Service</button>
+          <button class="hero__btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion hero-->
@@ -72,8 +79,8 @@
       <section class="benefits section">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
-          <ul class="card-set">
-            <li class="card-set-item">
+          <ul class="benefits__list card-set">
+            <li class="benefits__item card-set-item">
               <div class="card-set-icon-wrapper">
                 <svg class="card-set-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -85,7 +92,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="card-set-item">
+            <li class="benefits__item card-set-item">
               <div class="card-set-icon-wrapper">
                 <svg class="card-set-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -97,7 +104,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="card-set-item">
+            <li class="benefits__item card-set-item">
               <div class="card-set-icon-wrapper">
                 <svg class="card-set-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -109,7 +116,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="card-set-item">
+            <li class="benefits__item card-set-item">
               <div class="card-set-icon-wrapper">
                 <svg class="card-set-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -132,8 +139,11 @@
           <ul class="team__list card-set">
             <li class="team__item card-set-item">
               <img
-                src="./images/team/img-1.jpg"
-                height="260"
+                srcset="
+                  ./images/team/img-1.jpg    1x,
+                  ./images/team/img-1@2x.jpg 2x
+                "
+                src="./images/img-1.jpg"
                 width="264"
                 alt="Portrait of Mark Guerrero, Product Designer"
               >
@@ -174,8 +184,11 @@
             </li>
             <li class="team__item card-set-item">
               <img
-                src="./images/team/img-2.jpg"
-                height="260"
+                srcset="
+                  ./images/team/img-2.jpg    1x,
+                  ./images/team/img-2@2x.jpg 2x
+                "
+                src="./images/img-2.jpg"
                 width="264"
                 alt="Portrait of Tom Ford, Frontend Developer"
               >
@@ -216,8 +229,11 @@
             </li>
             <li class="team__item card-set-item">
               <img
-                src="./images/team/img-3.jpg"
-                height="260"
+                srcset="
+                  ./images/team/img-3.jpg    1x,
+                  ./images/team/img-3@2x.jpg 2x
+                "
+                src="./images/img-3.jpg"
                 width="264"
                 alt="Portrait of Camila Garcia, Marketing"
               >
@@ -258,8 +274,11 @@
             </li>
             <li class="team__item card-set-item">
               <img
-                src="./images/team/img-4.jpg"
-                height="260"
+                srcset="
+                  ./images/team/img-4.jpg    1x,
+                  ./images/team/img-4@2x.jpg 2x
+                "
+                src="./images/img-4.jpg"
                 width="264"
                 alt="Portrait of Daniel Wilson, UI Designer"
               >
@@ -310,10 +329,13 @@
             <li class="portfolio__item card-set-item">
               <div class="portfolio-photo">
                 <img
+                  srcset="
+                    ./images/portfolio/img-1.jpg    1x,
+                    ./images/portfolio/img-1@2x.jpg 2x
+                  "
                   src="./images/portfolio/img-1.jpg"
                   alt="Banking App"
                   width="360"
-                  height="300"
                 >
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -329,10 +351,13 @@
             <li class="portfolio__item card-set-item">
               <div class="portfolio-photo">
                 <img
+                  srcset="
+                    ./images/portfolio/img-2.jpg    1x,
+                    ./images/portfolio/img-2@2x.jpg 2x
+                  "
                   src="./images/portfolio/img-2.jpg"
                   alt="Cashless Payment"
                   width="360"
-                  height="300"
                 >
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -348,10 +373,13 @@
             <li class="portfolio__item card-set-item">
               <div class="portfolio-photo">
                 <img
+                  srcset="
+                    ./images/portfolio/img-3.jpg    1x,
+                    ./images/portfolio/img-3@2x.jpg 2x
+                  "
                   src="./images/portfolio/img-3.jpg"
                   alt="Meditation App"
                   width="360"
-                  height="300"
                 >
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -367,10 +395,13 @@
             <li class="portfolio__item card-set-item">
               <div class="portfolio-photo">
                 <img
+                  srcset="
+                    ./images/portfolio/img-4.jpg    1x,
+                    ./images/portfolio/img-4@2x.jpg 2x
+                  "
                   src="./images/portfolio/img-4.jpg"
                   alt="Taxi Service"
                   width="360"
-                  height="300"
                 >
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -386,10 +417,13 @@
             <li class="portfolio__item card-set-item">
               <div class="portfolio-photo">
                 <img
+                  srcset="
+                    ./images/portfolio/img-5.jpg    1x,
+                    ./images/portfolio/img-5@2x.jpg 2x
+                  "
                   src="./images/portfolio/img-5.jpg"
                   alt="Design"
                   width="360"
-                  height="300"
                 >
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -405,10 +439,13 @@
             <li class="portfolio__item card-set-item">
               <div class="portfolio-photo">
                 <img
+                  srcset="
+                    ./images/portfolio/img-6.jpg    1x,
+                    ./images/portfolio/img-6@2x.jpg 2x
+                  "
                   src="./images/portfolio/img-6.jpg"
                   alt="Online Courses"
                   width="360"
-                  height="300"
                 >
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -495,9 +532,9 @@
     </footer>
     <!-- #endregion footer -->
     <!-- #region modal -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="close-btn" type="button">
+        <button class="close-btn" type="button" data-modal-close>
           <svg class="icon close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -596,5 +633,71 @@
       </div>
     </div>
     <!-- #endregion modal -->
+    <!-- #region mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-btn" type="button">
+        <svg class="mobile-menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-nav">
+        <li>
+          <a class="active" href="./index.html">Studio</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contacts">
+        <li>
+          <a class="mobile-menu-contacts-link active" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-socials social-list">
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion mobile menu -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
